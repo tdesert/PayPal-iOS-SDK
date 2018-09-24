@@ -10,6 +10,7 @@ Pod::Spec.new do |spec|
   spec.platform         = :ios, '7.0'
   spec.ios.deployment_target = '7.0'
   spec.requires_arc     = false
+  spec.static_framework = true
 
   spec.default_subspec = 'Core', 'CardIO'
 
