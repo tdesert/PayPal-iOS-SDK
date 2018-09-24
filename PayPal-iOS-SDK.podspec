@@ -11,6 +11,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '7.0'
   spec.requires_arc     = false
   spec.static_framework = true
+  spec.pod_target_xcconfig = {"DEFINES_MODULE" => "YES"}
 
   spec.default_subspec = 'Core', 'CardIO'
 
