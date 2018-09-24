@@ -22,6 +22,7 @@ Pod::Spec.new do |spec|
     subspec.vendored_libraries = [ 'PayPalMobile/libPayPalMobile.a' ]
     subspec.compiler_flags   = '-fmodules', '-fmodules-autolink'
     subspec.xcconfig         = { 'OTHER_LDFLAGS' => '-lc++ -ObjC'}
+    subspec.public_header_files = 'PayPal/*.h'
   end
 
   spec.subspec 'CardIO' do |subspec|
